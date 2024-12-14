@@ -1,0 +1,37 @@
+
+.container {
+    max-width: 600px; 
+    /* 최대 가로 폭 */
+    
+    /* margin: 0 auto; 가운데 정렬 */
+    /* padding: 1rem; */
+  }
+
+  
+.foodName{
+    /* 텍스트 넘칠 때 '...' 표시 */
+    white-space: nowrap;  /* 텍스트가 한 줄로 유지되게 */
+    /* overflow: hidden;     넘친 텍스트 숨기기 */
+    /* text-overflow: ellipsis; 넘친 부분에 '...' 표시 */
+    
+}
+
+.card-body .d-flex div {
+    flex: 1; /* 좌우 영역을 균등하게 배치 */
+  }
+  
+  .card-body .text-end {
+    margin-left: 1rem; /* 좌측 정보와 우측 정보 간의 간격 */
+  }
+
+  .NutritionP{
+    margin-bottom: 0rem;
+  }
+  .NutritionPSub{
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+  }
+  /* .NutritionFootet{ */
+    /* text-align: left; */
+    /* justify-content: space-between */
+  /* } */
