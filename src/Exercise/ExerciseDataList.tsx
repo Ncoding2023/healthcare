@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import './ExerciseList.css';
+import '../css/ExerciseList.css';
 import { wImgsrc } from '../ts/Waiting-img-src';
 
 interface ExerciseData {

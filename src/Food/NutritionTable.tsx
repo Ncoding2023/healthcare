@@ -3,7 +3,7 @@ import { Nutrition } from "../ts/types";
 import { Button, Card, Col, Modal, Row } from "react-bootstrap";
 import {
   useVisiblePosts 
-} from "./nutritionService";
+} from "../ts/nutritionService";
 
 interface NutritionCardProps {
   data: Nutrition[];

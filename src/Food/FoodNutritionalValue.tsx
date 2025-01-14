@@ -5,8 +5,8 @@ import NutritionTable from "./NutritionTable";
 import {
   getNutritionByCategory,
   getNutritionData,
-} from "./nutritionService";
-import "./FoodNutritionalValue.css"; // MyInch.css 파일 추가
+} from "../ts/nutritionService";
+import "../css/FoodNutritionalValue.css"; // MyInch.css 파일 추가
 
 const FoodNutritionalValue: React.FC = () => {
   const [data, setData] = useState<Nutrition[]>([]);

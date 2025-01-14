@@ -1,7 +1,7 @@
 // import React, { useState } from "react";
 import { Button, Nav, Navbar } from "react-bootstrap";
-import "./CategoryFilter.css"; // App.css 파일 추가
-import { useVisiblePosts } from "./nutritionService";
+import "../css/CategoryFilter.css"; // App.css 파일 추가
+import { useVisiblePosts } from "../ts/nutritionService";
 
 interface CategoryFilterProps {
   categories: string[];

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button, Nav, Navbar } from "react-bootstrap";
-import "./MyInch.css"; // MyInch.css 파일 추가
+import "../css/MyInch.css"; // MyInch.css 파일 추가
 
 const MyInch = () => {
   // const [gender, setGender] = useState('');
@@ -63,13 +63,7 @@ const MyInch = () => {
 
       setBmr(calculatedBMR);
       setTdee(actionTdee); //활동대사량의 기준값으로 지정
-      // setPointTdee(actionTdee);
 
-      // if (tdee) {
-      //   setCarbs((tdee / 4) * 0.5);
-      //   setProtein((tdee / 4) * 0.3);
-      //   setFat((tdee / 9) * 0.2);
-      // }
 
       if (pointTdee) {
         setCarbs((pointTdee / 4) * 0.5);
@@ -80,10 +74,7 @@ const MyInch = () => {
         setCarbs((tdee / 4) * 0.5);
         setProtein((tdee / 4) * 0.3);
         setFat((tdee / 9) * 0.2);
-        // setTdeeInfo("체중 유지를 위해서는 활동 대사량만큼 섭취하셔야 합니다.");
-        // setNutritionInfo(
-        //   "균형 잡힌 식사를 원하는 사람들을 위한 비율입니다. 탄수화물은 주요 에너지원으로 사용되며, 단백질과 지방도 적절하게 균형을 이루고 있습니다. 이 비율은 운동을 하지 않는 일반적인 일상생활에 적합합니다."
-        // );
+
       }
     }
   }, [weight, height, age, gender, action, tdee, pointTdee]); // 값이 변경될 때마다 실행
@@ -92,24 +83,7 @@ const MyInch = () => {
     setPointTdee(tdee + adjustment);
     setSelectedTdee(adjustment);
     
-    // setTdeeInfo();
-    // switch (adjustment) {
-    //   case -500:
-    //     setTdeeInfo(
-    //       "체중 감량를 위해 대사량에서 -500kcl로 덜 섭취하셔야 합니다."
-    //     );
-    //     break;
-    //   case 0:
-    //     setTdeeInfo("체중 유지를 위해서는 활동 대사량만큼 섭취하셔야 합니다.");
-    //     break;
-    //   case 500:
-    //     setTdeeInfo(
-    //       "체중 증량를 위해 대사량에서 500kcl로 더 섭취하셔야 합니다."
-    //     );
-    //     break;
-    //   default:
-    //     setTdeeInfo("");
-    // }
+    
   };
   // 탄단비 비율 동적 변경
   const changeRatio = (
@@ -127,65 +101,7 @@ const MyInch = () => {
     console.log(ratio);
     setSelectedRatio(ratio);
 
-    // const changeRatioStr =
-    //   String(changeCarb) + String(changeProtein) + String(changeFat);
-    // if(changeRatioStr === "532")   console.log(changeRatioStr);
-
-    // setNutritionInfo("ㅅㄷㄴㅅ");
-    // switch (changeRatioStr) {
-    //   case "442":
-    //     setNutritionInfo(
-    //       "체중 감량을 위한 추천 비율입니다. 탄수화물과 단백질 비율을 균등하게 설정하여 칼로리 감소를 유도합니다. 이 비율은 칼로리 감소를 목표로 하며, 지방과 단백질의 비율이 높은 특징이 있습니다."
-    //     );
-    //     break;
-    //   case "433":
-    //     setNutritionInfo(
-    //       "체중 감량을 위한 추천 비율입니다. 탄수화물과 단백질 비율을 균등하게 설정하여 칼로리 감소를 유도합니다. 이 비율은 체중 감량을 목표로 하며, 탄수화물과 단백질이 균형을 이루는 것이 특징입니다."
-    //     );
-    //     break;
-    //   case "532":
-    //     setNutritionInfo(
-    //       "균형 잡힌 식사를 원하는 사람들을 위한 비율입니다. 탄수화물은 주요 에너지원으로 사용되며, 단백질과 지방도 적절하게 균형을 이루고 있습니다. 이 비율은 운동을 하지 않는 일반적인 일상생활에 적합합니다."
-    //     );
-    //     break;
-    //   case "631":
-    //     setNutritionInfo(
-    //       "근육 증가 및 벌크업을 위한 비율입니다. 더 많은 탄수화물을 섭취하여 운동 후 회복과 성장을 돕습니다. 이 비율은 운동량이 많은 사람들에게 효과적이며, 에너지원으로 탄수화물을 많이 사용할 수 있습니다."
-    //     );
-    //     break;
-    //   case "622":
-    //     setNutritionInfo(
-    //       "근육 증가 및 벌크업을 위한 비율입니다. 더 많은 탄수화물을 섭취하여 운동 후 회복과 성장을 돕습니다. 이 비율은 근육량 증가를 위한 최적의 선택으로, 고탄수화물 식단이 특징입니다."
-    //     );
-    //     break;
-    //   default:
-    //     setNutritionInfo("");
-    // }
   };
-  // const incdSubmit = async (event) => {
-  //   event.preventDefault();
-
-  //   try {
-  //     const requestData = {
-  //       height,
-  //       weight,
-  //       age,
-  //       gender,
-  //       bmr,
-  //       carbs,
-  //       protein,
-  //       fat,
-  //       action,
-  //     };
-  //     const response = await axios.post(
-  //       "http://localhost:8080/myinch",
-  //       requestData
-  //     );
-  //     // console.log('서버 응답:', response.data);
-  //   } catch (error) {
-  //     console.error("에러 발생:", error);
-  //   }
-  // };
 
   // 컴포넌트가 마운트될 때 로컬 스토리지에서 데이터 불러오기
   useEffect(() => {
