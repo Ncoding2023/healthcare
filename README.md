@@ -6,10 +6,11 @@
 healthcare는 **React**, **TypeScript**, **Vite**를 사용하여 개발한 헬스케어 웹 애플리케이션입니다. 사용자에게 건강 관련 정보를 제공하고, 건강 데이터를 시각적으로 표현하며, 사용자가 직접 건강 기록을 관리할 수 있는 기능을 제공합니다.
 
 # 주요 기술 스택
-
-Frontend : React, TypeScript, Vite
-개발 도구: VS
 ```
+Frontend : React, TypeScript, Vite
+개발 도구: VS(Visual Studio)
+
+
 src/
 ├── Exercise/                       # 운동 관련 컴포넌트들
 │   ├── ExerciseDataList.tsx        # 운동 데이터 리스트 컴포넌트
@@ -52,17 +53,20 @@ src/
 - **시각화**: 입력된 데이터를 차트를 사용하여 직관적으로 보여줍니다.
 
 개발 환경
+```
 운영체제: Windows10
 React 버전: 18.3.3
 TypeScript 버전: 5.5.3
 Vite 버전: 5.4.1
 Templates 버전 : bootstrap.min.css
+```
 
 문의
+```
 개발자: [남상원]
 이메일: [ncoding1@gmail.com]
 tel : 010 2900 6103
-
+```
 피드백로 알려주시면 주의 깊게 새겨듣겠습니다.
 
 #	감사합니다
