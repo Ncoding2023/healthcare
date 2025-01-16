@@ -25,26 +25,26 @@ src/
 │   ├── FoodNutritionalValue.tsx    # 음식 영양소 정보 컴포넌트
 │   └── NutritionTable.tsx          # 영양소 테이블 컴포넌트
 │
-├── ts/             		# 유틸리티 전역 함수
-│   ├── types.ts          # 식품관련으로 interface 선언
-│   ├── setProxy.ts             # proxy로  스프링부트 연동
+├── ts/             	            	# 유틸리티 전역 함수
+│   ├── types.ts                    # 식품관련으로 interface 선언
+│   ├── setProxy.ts                 # proxy로  스프링부트 연동
 │   ├── nutritionService.ts         # 음식 관련 서비스 (API 통신 등)
 │   ├── Waiting-img-src.ts          # 저작권 없는 이미지 준비중 url 및 크기
 │
-├── css/             		# 유틸리티 전역 함수
+├── css/             		            # 유틸리티 전역 함수
 │   ├── ExerciseList.css            # 운동 리스트 스타일 (CSS 파일은 제외됨)
 │   ├── CategoryFilter.css          # 카테고리 필터 스타일 (CSS 파일은 제외됨)
 │   ├── FoodNutritionalValue.css    # 음식 영양소 정보 스타일 (CSS 파일은 제외됨)
-│   ├── types.ts          # 식품관련으로 interface 선언
-│   ├── setProxy.ts             # proxy로  스프링부트 연동
+│   ├── types.ts                    # 식품관련으로 interface 선언
+│   ├── setProxy.ts                 # proxy로  스프링부트 연동
 │   └── Mylnch.css                  # Mylnch 관련 스타일
 │
-├── App.tsx                # 최상위 컴포넌트
-├── App.css               # 최상위 컴포넌트 스타일 (CSS)
-├── Footer.tsx                 # 유틸리티 함수들
-├── index.css               # 유틸리티 함수들
-└── main.tsx               # 애플리케이션 진입
-└── vite-env.d.ts               # Vite 환경 파일
+├── App.tsx                         # 최상위 컴포넌트
+├── App.css                         # 최상위 컴포넌트 스타일 (CSS)
+├── Footer.tsx                      # 유틸리티 함수들
+├── index.css                       # 유틸리티 함수들
+└── main.tsx                        # 애플리케이션 진입
+└── vite-env.d.ts                   # Vite 환경 파일
 ```
 #  주요 기능
 - **건강 데이터 관리**: 사용자는 자신이 입력한 건강 데이터를 관리하고 시각화할 수 있습니다.
