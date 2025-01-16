@@ -67,7 +67,7 @@ Templates 버전 : bootstrap.min.css
 이메일: [ncoding1@gmail.com]
 tel : 010 2900 6103
 ```
-현재 개발자 취업 준비중이며 React 및 Spring Boot 위주로 개인 프로젝트 개발 겸 학습중입니다.
+현재 개발자 취업 준비중이며 React 및 Spring Boot 위주로 개인 프로젝트 개발 겸 학습중입니다. <br>
 부족한 부분이나 수정 사항도 있다면 피드백 부탁드립니다.
 
 #	감사합니다
