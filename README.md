@@ -9,8 +9,9 @@ healthcare는 **React**, **TypeScript**, **Vite**를 사용하여 개발한 헬�
 ```
 Frontend : React, TypeScript, Vite
 개발 도구: VS(Visual Studio)
-
-
+```
+# 프로젝트 구조
+```
 src/
 ├── Exercise/                       # 운동 관련 컴포넌트들
 │   ├── ExerciseDataList.tsx        # 운동 데이터 리스트 컴포넌트
